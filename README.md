@@ -1,4 +1,4 @@
-# Stable Diffusion Webui Docker Image
+# Stable Diffusion Webui Docker Image 
 
 ### Prepare the directory mapping in your host:
 ```
