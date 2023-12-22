@@ -104,6 +104,5 @@ jobs:
           BUILD_VERSION=${{ steps.vars.outputs.build_version }}
         push: true
         tags: |
-          yahuiwong/stable-diffusion-webui-docker:${{ github.event.inputs.release_stage }}-cuda
-          yahuiwong/stable-diffusion-webui-docker:cuda-${{ github.event.inputs.branch_or_tag }}-${{ steps.vars.outputs.build_version }}
+          yahuiwong/stable-diffusion-webui-docker:cuda-${{ steps.branch-name.outputs.current_branch }}-${{ steps.commit.outputs.short }}
         platforms: linux/amd64
