@@ -27,7 +27,7 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-$(uname -m)
 RUN bash ./Miniconda3-latest-Linux-$(uname -m).sh -b \
     && rm -rf ./Miniconda3-latest-Linux-$(uname -m).sh
 
-RUN git clone --depth 1 --branch $BRANCH_OR_TAG https://github.com/AUTOMATIC1111/stable-diffusion-webui.git /app/stable-diffusion-webui
+RUN git clone --depth 1  https://github.com/AUTOMATIC1111/stable-diffusion-webui.git /app/stable-diffusion-webui
 
 ENV PATH /app/miniconda3/bin/:$PATH
 
